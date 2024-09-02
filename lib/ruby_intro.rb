@@ -71,6 +71,7 @@ def starts_with_consonant?(string)
     return false
   end
   return !(vowels.include? lower_str[0])
+  
 end
 
 def binary_multiple_of_4?(string)
