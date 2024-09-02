@@ -3,7 +3,11 @@
 # Part 1
 
 def sum(arr)
-  0
+  sum = 0
+  for i in arr
+    sum += i
+  end
+  sum
   # YOUR CODE HERE
 end
 
