@@ -61,6 +61,9 @@ def hello(name)
 end
 
 def starts_with_consonant?(string)
+  if string.length == 0
+    return false
+  end
   lower_str = string.downcase
   vowels = ['a','e','i','o','u']
   return !(vowels.include? lower_str[0])
