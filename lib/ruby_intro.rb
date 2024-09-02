@@ -61,7 +61,9 @@ def hello(name)
 end
 
 def starts_with_consonant?(string)
-  # YOUR CODE HERE
+  lower_str = string.downcase
+  vowels = ['a','e','i','o','u']
+  return !(vowels.include? lower_str[0])
 end
 
 def binary_multiple_of_4?(string)
