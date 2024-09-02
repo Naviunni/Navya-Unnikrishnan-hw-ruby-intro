@@ -66,6 +66,10 @@ def starts_with_consonant?(string)
   end
   lower_str = string.downcase
   vowels = ['a','e','i','o','u']
+  alphabets = ('a'..'z')
+  if !alphabets.include? lower_str[0]
+    return false
+  end
   return !(vowels.include? lower_str[0])
 end
 
