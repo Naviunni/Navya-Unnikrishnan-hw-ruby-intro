@@ -40,7 +40,7 @@ end
 
 def sum_to_n?(arr, number)
   n = arr.length
-  if n == 0
+  if n <= 1
     return false
   end
 end
