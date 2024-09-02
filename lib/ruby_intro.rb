@@ -43,6 +43,15 @@ def sum_to_n?(arr, number)
   if n <= 1
     return false
   end
+
+  set = Set.new
+  for i in arr
+    if set.include?(number-i)
+      return true
+    end
+    set.add?(i)
+  end
+  return false
 end
 
 # Part 2
