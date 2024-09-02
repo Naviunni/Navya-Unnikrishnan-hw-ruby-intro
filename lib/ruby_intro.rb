@@ -11,7 +11,31 @@ def sum(arr)
 end
 
 def max_2_sum(arr)
-  # YOUR CODE HERE
+  n = arr.length
+  if n < 1
+    return 0
+  elsif n == 1
+    return arr[0]
+  end
+
+  if arr.at(0) > arr.at(1)
+    largest = arr.at(0)
+    second = arr.at(1)
+  else 
+    largest = arr.at(1)
+    second = arr.at(0)
+  end
+
+  for i in 2..n-1
+    if arr.at(i) >= largest
+      second = largest
+      largest = arr.at(i)
+    elsif arr.at(i) >= second and arr.at(i) != largest
+      second = arr.at(i)
+    end
+  end
+  
+  return (largest+second)
 end
 
 def sum_to_n?(arr, number)
