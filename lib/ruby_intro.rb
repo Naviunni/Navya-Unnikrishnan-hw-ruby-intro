@@ -34,12 +34,15 @@ def max_2_sum(arr)
       second = arr.at(i)
     end
   end
-  
+
   return (largest+second)
 end
 
 def sum_to_n?(arr, number)
-  # YOUR CODE HERE
+  n = arr.length
+  if n == 0
+    return false
+  end
 end
 
 # Part 2
