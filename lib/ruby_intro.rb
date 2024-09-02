@@ -8,7 +8,6 @@ def sum(arr)
     sum += i
   end
   sum
-  # YOUR CODE HERE
 end
 
 def max_2_sum(arr)
