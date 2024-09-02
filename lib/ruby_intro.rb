@@ -69,7 +69,10 @@ def starts_with_consonant?(string)
 end
 
 def binary_multiple_of_4?(string)
-  # YOUR CODE HERE
+  if string == '0'
+    return true
+  end
+  return (string =~ /^[01]*00$/) !=nil
 end
 
 # Part 3
