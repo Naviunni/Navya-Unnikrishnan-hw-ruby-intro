@@ -78,6 +78,9 @@ end
 # Object representing a book
 class BookInStock
   def initialize(isbn, price)
+    if(isbn.empty? || price <= 0)
+      raise ArgumentError, 'Illegal arguments passed'
+    end
     @isbn = isbn
     @price = price
   end
