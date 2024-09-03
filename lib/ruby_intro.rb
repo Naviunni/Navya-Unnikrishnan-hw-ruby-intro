@@ -96,4 +96,7 @@ class BookInStock
   def price=(price)
     @price=price
   end
+  def price_as_string
+    "$%0.2f"% [@price]
+  end
 end
